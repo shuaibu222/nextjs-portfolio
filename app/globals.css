@@ -87,8 +87,7 @@ nav {
   background-repeat: repeat;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 3rem;
-  font-weight: 900;
+  font-size: 2.5rem;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -97,12 +96,28 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 /* hero style */
 
-main h1 {
+main {
+  max-width: 80vw;
+  margin-inline: auto;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 70vh;
+}
+
+.first-row {
+  margin-top: 7rem;
+}
+
+.hero h1 {
   background: rgb(229, 232, 47);
   background: linear-gradient(
     90deg,
@@ -113,7 +128,49 @@ main h1 {
   background-repeat: repeat;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 5rem;
-  font-weight: 900;
-  text-align: center;
+  font-size: 7rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.engineer {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.engineer > span {
+  width: 4rem;
+  height: 2px;
+  background: var(--light-text);
+}
+
+.engineer-child {
+  font-size: 1.8rem;
+}
+
+.second-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.down {
+  font-size: 1.5rem;
+  margin-top: 5rem;
+  padding: 0.6rem 0.2rem;
+  border: 2px solid var(--light-text);
+  border-radius: 35%;
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dots > span {
+  padding: 0.2rem;
+  background: var(--light-text);
+  border-radius: 50%;
 }
