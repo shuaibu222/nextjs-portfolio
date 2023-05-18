@@ -1,8 +1,11 @@
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import { TfiTwitter } from 'react-icons/tfi';
+'use client';
+
+import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import { React, useState } from 'react';
 import Link from 'next/link';
 
-export default function navigation() {
+export default function Navigation() {
+  const [activeTab, setActiveTab] = useState('home');
   return (
     <header>
       <nav>
@@ -23,7 +26,7 @@ export default function navigation() {
           target="_blank"
           rel="norefferer noopener"
         >
-          <TfiTwitter />
+          <FaTwitter />
         </a>
         <a
           href="https://www.google.com"
