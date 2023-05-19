@@ -1,11 +1,18 @@
+'use client';
+
 import { BsArrowDown } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
+import { ImHome } from 'react-icons/im';
+import { Poppins } from 'next/font/google';
 import Link from 'next/link';
+import About from './components/About';
+
+const poppins = Poppins({ subsets: ['latin'], weight: '500' });
 
 export default function Home() {
   return (
     <>
-      <main className="hero">
+      <section className="hero" id="hero">
         <div className="first-row">
           <h1>Shuaib.</h1>
           <div className="engineer">
@@ -14,33 +21,38 @@ export default function Home() {
           </div>
         </div>
         <div className="second-row">
-          <Link href="/" className="down">
+          <Link href="#about" className="down">
             <BsArrowDown className="arrow-down" />
           </Link>
         </div>
-      </main>
-      <div className="sticky">
-        <div className="email">
-          <MdEmail className="email-icon" />
-          <span></span>
-          <Link href="/" className="shuaibu-email">
-            shuaibuabdulkadir222@gmail.com
-          </Link>
-        </div>
-        <div className="nav">
-          <Link className="nav-items" href="/">
-            About.
-          </Link>
+        <div className="sticky">
+          <div className="email">
+            <MdEmail className="email-icon" />
+            <span></span>
+            <Link href="/" className="shuaibu-email">
+              shuaibuabdulkadir222@gmail.com
+            </Link>
+          </div>
+          <div className="nav">
+            <Link className="nav-items" href="/">
+              About.
+            </Link>
 
-          <Link className="nav-items" href="/">
-            Skills.
-          </Link>
+            <Link className="nav-items" href="/">
+              Skills.
+            </Link>
 
-          <Link className="nav-items" href="/">
-            Work.
-          </Link>
+            <Link className="nav-items" href="/">
+              Work.
+            </Link>
+          </div>
         </div>
-      </div>
+        <Link href="#hero" className="home-p">
+          <ImHome />
+        </Link>
+      </section>
+
+      <About />
     </>
   );
 }

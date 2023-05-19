@@ -6,17 +6,33 @@
 }
 
 /* reset style */
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
 *,
 *::after,
 *::before {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
-html {
-  font-size: 100%;
-  scroll-behavior: smooth;
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 html,
@@ -58,6 +74,11 @@ a {
 
 li {
   list-style-type: none;
+}
+
+img {
+  width: 100%;
+  display: block;
 }
 
 /* navigation style */
@@ -119,7 +140,8 @@ nav {
   width: 90vw;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  z-index: 100;
 }
 
 .email {
@@ -137,7 +159,7 @@ nav {
 }
 
 .email > .shuaibu-email {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   writing-mode: vertical-rl;
   letter-spacing: 2px;
   transition: all 0.3s ease-in-out;
@@ -162,7 +184,7 @@ nav {
 
 .nav-items {
   display: inline-block;
-  font-size: 2rem;
+  font-size: clamp(0.8rem, 3vw, 1.8rem);
   background: linear-gradient(
     to right,
     var(--accent),
@@ -183,27 +205,42 @@ nav {
   background-position: 0 100%;
 }
 
-/* hero style */
+/* home sticky style */
 
-main {
-  max-width: 70vw;
-  margin-inline: auto;
+.home-p {
+  position: fixed;
+  top: 90%;
+  left: 92%;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
 }
+
+.home-p:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-9%);
+}
+
+/* hero style */
 
 .hero {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 70vh;
+  max-width: 70vw;
+  margin-inline: auto;
+  min-height: 85vh;
+  margin-bottom: 5rem;
 }
 
 .first-row {
   margin-top: 7rem;
+  z-index: 10000;
 }
 
 .hero h1 {
-  margin: 0;
-  color: rgba(225, 225, 225, 0.01);
+  color: var(--accent);
   background-image: url('https://xmple.com/wallpaper/cyan-lines-streaks-stripes-yellow-1920x1080-c2-60beb1-ffff00-l2-169-273-a-255-f-1.svg');
   background-repeat: repeat;
   text-align: center;
@@ -254,22 +291,131 @@ main {
 }
 
 .down {
-  font-size: 2rem;
-  padding: 0.6rem 0.2rem;
-  border: 2px solid var(--light-text);
-  border-radius: 35%;
+  font-size: 2.2rem;
   transition: all 0.3s ease-in-out;
-  z-index: 1;
+  z-index: 10000;
 }
 
 .arrow-down {
   transition: all 0.3s ease-in-out;
 }
 
-.down:hover {
+.arrow-down:hover {
   border-color: var(--accent);
   color: var(--accent);
-  transform: translateY(-7%);
+  transform: translateY(-9%);
 }
 
-/*  */
+/* about style */
+
+.about {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 70vw;
+  min-height: 100vh;
+  margin-inline: auto;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  padding: 5rem 2rem;
+  border: 3px solid cyan;
+  border-radius: 1.5rem;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading h1 {
+  background: rgb(254, 253, 20);
+  background: linear-gradient(
+    0deg,
+    rgba(254, 253, 20, 1) 29%,
+    rgba(45, 253, 235, 1) 78%
+  );
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+  -webkit-font-smoothing: antialiased;
+  font-size: clamp(2rem, 7vw, 5rem);
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.about-desc {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.about-desc > span {
+  width: 2rem;
+  height: 2px;
+  background: var(--light-text);
+}
+.about-desc > p {
+  font-size: clamp(0.8rem, 3vw, 1.5rem);
+}
+
+.bg-name {
+  position: absolute;
+  top: -3.5rem;
+  font-size: clamp(10rem, 30vw, 25rem);
+  color: rgba(225, 225, 225, 0.051);
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 7rem;
+  max-width: 50%;
+}
+
+.profile-img {
+  max-width: 80%;
+}
+
+.profile-img > img {
+  filter: brightness(35%);
+  border-radius: 1.5rem;
+}
+
+.tooltip {
+  position: absolute;
+  top: 10%;
+  left: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+.tooltip > h3 {
+  font-size: clamp(2rem, 5vw, 6rem);
+  color: cyan;
+}
+
+.tooltip-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+  color: var(--dark-text);
+}
+
+.biography {
+  max-width: 60%;
+}
+
+.biography > p {
+  color: var(--dark-text);
+  font-size: 1.1rem;
+}
