@@ -1,8 +1,8 @@
 :root {
   --background: rgb(0, 0, 0);
-  --accent: yellow; /* #00f2ff */
+  --accent: cyan; /* #00f2ff */
   --light-text: white;
-  --dark-text: #eeeeee;
+  --dark-text: #dfdfdf;
 }
 
 /* reset style */
@@ -57,6 +57,7 @@ body {
 p,
 div,
 span,
+a,
 li,
 h1,
 h2,
@@ -100,17 +101,8 @@ nav {
 }
 
 .logo {
-  background: rgb(254, 253, 20);
-  background: linear-gradient(
-    0deg,
-    rgba(254, 253, 20, 1) 29%,
-    rgba(45, 253, 235, 1) 78%
-  );
-  background-repeat: repeat;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
   font-size: 2.5rem;
-  -webkit-font-smoothing: antialiased;
+  color: var(--accent);
 }
 
 .social-icons {
@@ -241,32 +233,8 @@ nav {
 
 .hero h1 {
   color: var(--accent);
-  background-image: url('https://xmple.com/wallpaper/cyan-lines-streaks-stripes-yellow-1920x1080-c2-60beb1-ffff00-l2-169-273-a-255-f-1.svg');
-  background-repeat: repeat;
-  text-align: center;
-  background-repeat: repeat;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: animate 15s ease-in-out infinite;
   font-size: clamp(1rem, 10vw, 7rem);
-  display: inline-block;
   margin-bottom: 1rem;
-}
-
-@keyframes animate {
-  0%,
-  100% {
-    background-position: left top;
-  }
-  25% {
-    background-position: right bottom;
-  }
-  50% {
-    background-position: left bottom;
-  }
-  75% {
-    background-position: right top;
-  }
 }
 
 .engineer {
@@ -319,8 +287,12 @@ nav {
   margin-top: 5rem;
   margin-bottom: 3rem;
   padding: 5rem 2rem;
-  border: 3px solid cyan;
-  border-radius: 1.5rem;
+  background: rgba(0, 225, 255, 0.055);
+  border-top: 15px solid cyan;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid cyan;
+  /* border-radius: 1.5rem; */
 }
 
 .heading {
@@ -330,19 +302,8 @@ nav {
 }
 
 .heading h1 {
-  background: rgb(254, 253, 20);
-  background: linear-gradient(
-    0deg,
-    rgba(254, 253, 20, 1) 29%,
-    rgba(45, 253, 235, 1) 78%
-  );
-  background-repeat: repeat;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 2.5rem;
-  -webkit-font-smoothing: antialiased;
+  color: cyan;
   font-size: clamp(2rem, 7vw, 5rem);
-  display: inline-block;
   margin-bottom: 1rem;
 }
 
@@ -365,7 +326,7 @@ nav {
   position: absolute;
   top: -3.5rem;
   font-size: clamp(10rem, 30vw, 25rem);
-  color: rgba(225, 225, 225, 0.051);
+  color: rgba(225, 225, 225, 0.071);
 }
 
 .content {
@@ -373,7 +334,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
   margin-top: 7rem;
   max-width: 50%;
 }
@@ -389,7 +350,7 @@ nav {
 
 .tooltip {
   position: absolute;
-  top: 10%;
+  top: 5%;
   left: 70%;
   display: flex;
   flex-direction: column;
@@ -398,8 +359,8 @@ nav {
 }
 
 .tooltip > h3 {
-  font-size: clamp(2rem, 5vw, 6rem);
-  color: cyan;
+  font-size: clamp(2rem, 4vw, 4rem);
+  color: var(--dark-text);
 }
 
 .tooltip-desc {
@@ -407,15 +368,28 @@ nav {
   flex-direction: column;
   align-items: flex-end;
   gap: 0.3rem;
-  font-size: 0.9rem;
-  color: var(--dark-text);
+  font-size: 0.8rem;
+  color: cyan;
 }
 
 .biography {
-  max-width: 60%;
+  max-width: 70%;
 }
 
 .biography > p {
   color: var(--dark-text);
-  font-size: 1.1rem;
+  font-size: 1rem;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+.lg-shuaib {
+  font-size: 3rem;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-top: 1rem;
 }

@@ -31,19 +31,26 @@ export default function About() {
         </div>
         <div className="biography">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
-            debitis. Vitae recusandae culpa minus libero ipsam quis possimus.
-            Omnis vero consequatur, molestias perferendis in adipisci, laborum
-            temporibus provident est praesentium possimus aspernatur unde fuga
-            ipsum inventore vel deserunt dolorem magni ut minus iusto impedit
-            quia nesciunt tempore? Culpa nihil possimus, esse aperiam quos
-            consectetur harum, iste dolorum eveniet numquam soluta recusandae
-            vero molestiae id iure, magnam labore placeat illo! A quam quisquam
-            vel nam adipisci est voluptates non, temporibus iure consequuntur
-            officiis incidunt doloremque atque. Ex quo eos dolorem tempora
-            cupiditate quasi laborum praesentium, assumenda asperiores corporis
-            nam, ad animi!
+            <span className="lg-shuaib">&quot;Shuaib</span> ipsum dolor sit amet
+            consectetur adipisicing elit. Tempore, debitis. Vitae recusandae
+            culpa minus libero ipsam quis possimus. Omnis vero consequatur,
+            molestias perferendis in adipisci, laborum temporibus provident est
+            praesentium possimus aspernatur unde fuga ipsum inventore vel
+            deserunt dolorem magni ut minus iusto impedit quia nesciunt
+            tempore?&quot;.
           </p>
+          <p>Here are my core skills that I have been working with:</p>
+          <div className="list">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>Sass</p>
+            <p>Javascript</p>
+            <p>react js</p>
+            <p>next js</p>
+            <p>jest</p>
+            <p>debugging</p>
+            <p>headless cms</p>
+          </div>
         </div>
       </section>
     </article>

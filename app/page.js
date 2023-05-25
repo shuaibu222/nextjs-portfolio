@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <section className="hero" id="hero">
         <div className="first-row">
-          <h1>Shuaib.</h1>
+          <h1 className={poppins.className}>Shuaib.</h1>
           <div className="engineer">
             <span></span>
             <p className="engineer-child">Frontend software engineer</p>
@@ -47,7 +47,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <Link href="#hero" className="home-p">
+        <Link href="#header" className="home-p">
           <ImHome />
         </Link>
       </section>

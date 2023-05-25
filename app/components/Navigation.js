@@ -7,7 +7,7 @@ import Link from 'next/link';
 export default function Navigation() {
   const [activeTab, setActiveTab] = useState('home');
   return (
-    <header>
+    <header id="header">
       <nav>
         <Link href="/" className="logo">
           S.
