@@ -332,7 +332,7 @@ nav {
   color: rgba(225, 225, 225, 0.071);
 }
 
-.content {
+.about .content {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -430,4 +430,30 @@ nav {
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   border-bottom: 15px solid var(--accent);
+}
+
+.work .content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+}
+
+.p-img {
+  grid-column: 1 / 10;
+  border-radius: 1rem;
+}
+
+.project-desc {
+  position: absolute;
+  grid-column: 7 / 13;
+  background: black;
+  padding: 1rem;
+  border-radius: 1rem;
 }

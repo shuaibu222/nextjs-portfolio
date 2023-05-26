@@ -2,7 +2,7 @@ import './globals.css';
 import { Poppins } from 'next/font/google';
 import Navigation from './components/Navigation';
 
-const poppins = Poppins({ subsets: ['latin-ext'], weight: '400' });
+const poppins = Poppins({ subsets: ['latin'], weight: '400' });
 
 export const metadata = {
   title: 'Shuaibu Abdulkadir',
