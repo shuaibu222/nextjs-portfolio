@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Poppins } from 'next/font/google';
+import { MdPlayArrow } from 'react-icons/md';
 import image from '../../assets/shuaib.jpg';
 
 const poppins = Poppins({ subsets: ['latin'], weight: '900' });
@@ -11,7 +12,7 @@ export default function About() {
     <article className="about" id="about">
       <section className="heading">
         <h1>About.</h1>
-        <div className="about-desc">
+        <div className="desc">
           <span></span>
           <p>what&apos;s my personality?</p>
           <span></span>
@@ -31,26 +32,72 @@ export default function About() {
         </div>
         <div className="biography">
           <p>
-            <span className="lg-shuaib">&quot;Shuaib</span> ipsum dolor sit amet
-            consectetur adipisicing elit. Tempore, debitis. Vitae recusandae
-            culpa minus libero ipsam quis possimus. Omnis vero consequatur,
-            molestias perferendis in adipisci, laborum temporibus provident est
-            praesentium possimus aspernatur unde fuga ipsum inventore vel
-            deserunt dolorem magni ut minus iusto impedit quia nesciunt
-            tempore?&quot;.
+            Hello!, My name is Shuaibu Abdulkadir and I&apos;m a frontend
+            enngineer that&apos;s having fun in building websites with beautiful
+            and simple UI more espicially using my favourites i.e grid system
+            and flexbox.{' '}
           </p>
-          <p>Here are my core skills that I have been working with:</p>
-          <div className="list">
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>Sass</p>
-            <p>Javascript</p>
-            <p>react js</p>
-            <p>next js</p>
-            <p>jest</p>
-            <p>debugging</p>
-            <p>headless cms</p>
-          </div>
+          <p>
+            {' '}
+            When I was in school back in 2018 learning computer science as my
+            Diploma I started interacting with coding initially the web part,
+            which to me is very exciting. Gradually growing better until I jump
+            into android development because of my final year project - At last
+            - I succeed passing out in flying colors.
+          </p>{' '}
+          <p>
+            When all things got a good start I rethink &quot;Why shouldn&apos;t
+            I focus on the web part?&quot; for implementing that Idea I enroll
+            into an online coding school <span>&quot;freeCodeCamp&quot;</span>{' '}
+            going through the exercises, testing my self with many coding
+            challenges until it became real i.e I&apos;m able to build and clone
+            frontend of any desired website.
+          </p>
+          <section className="skills" id="skills">
+            <p>Here are my core skills that I&apos;ve been working with:</p>
+            <div className="list">
+              <div className="div">
+                <MdPlayArrow className="arrow-right" />
+                <p>HTML</p>
+              </div>
+              <div className="div">
+                <MdPlayArrow className="arrow-right" />
+                <p>CSS</p>
+              </div>
+              <div className="div">
+                <MdPlayArrow className="arrow-right" />
+                <p>Sass</p>
+              </div>
+              <div className="div">
+                <MdPlayArrow className="arrow-right" />
+                <p>Javascript</p>
+              </div>
+              <div className="div">
+                <MdPlayArrow className="arrow-right" />
+                <p>react js</p>
+              </div>
+              <div className="div">
+                <MdPlayArrow className="arrow-right" />
+                <p>next js</p>
+              </div>
+              <div className="div">
+                <MdPlayArrow className="arrow-right" />
+                <p>headless cms</p>
+              </div>
+              <div className="div">
+                <MdPlayArrow className="arrow-right" />
+                <p>jest</p>
+              </div>
+              <div className="div">
+                <MdPlayArrow className="arrow-right" />
+                <p>debugging</p>
+              </div>
+              <div className="div">
+                <MdPlayArrow className="arrow-right" />
+                <p>testing</p>
+              </div>
+            </div>
+          </section>
         </div>
       </section>
     </article>
