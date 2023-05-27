@@ -70,31 +70,31 @@ export default function About() {
               </div>
               <div className="div">
                 <MdPlayArrow className="arrow-right" />
-                <p>Javascript</p>
+                <p>JavaScript</p>
               </div>
               <div className="div">
                 <MdPlayArrow className="arrow-right" />
-                <p>react js</p>
+                <p>React js</p>
               </div>
               <div className="div">
                 <MdPlayArrow className="arrow-right" />
-                <p>next js</p>
+                <p>Next js</p>
               </div>
               <div className="div">
                 <MdPlayArrow className="arrow-right" />
-                <p>headless cms</p>
+                <p>Headless CMS</p>
               </div>
               <div className="div">
                 <MdPlayArrow className="arrow-right" />
-                <p>jest</p>
+                <p>Jest</p>
               </div>
               <div className="div">
                 <MdPlayArrow className="arrow-right" />
-                <p>debugging</p>
+                <p>Debugging</p>
               </div>
               <div className="div">
                 <MdPlayArrow className="arrow-right" />
-                <p>testing</p>
+                <p>Testing</p>
               </div>
             </div>
           </section>

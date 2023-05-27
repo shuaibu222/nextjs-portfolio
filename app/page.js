@@ -7,6 +7,7 @@ import { Poppins } from 'next/font/google';
 import Link from 'next/link';
 import About from './components/About';
 import Work from './components/Work';
+import Footer from './components/Footer';
 
 const poppins = Poppins({ subsets: ['latin'], weight: '500' });
 
@@ -38,11 +39,6 @@ export default function Home() {
             <Link className="nav-items" href="#about">
               About.
             </Link>
-
-            <Link className="nav-items" href="#skills">
-              Skills.
-            </Link>
-
             <Link className="nav-items" href="#work">
               Work.
             </Link>
@@ -57,6 +53,9 @@ export default function Home() {
 
       {/* work section */}
       <Work />
+
+      {/* footer */}
+      <Footer />
     </>
   );
 }

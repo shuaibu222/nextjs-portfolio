@@ -35,6 +35,9 @@ export default function Navigation() {
         >
           <FaLinkedinIn />
         </a>
+        <a href="https://www.google.com" className="resume">
+          resume
+        </a>
       </div>
     </header>
   );
