@@ -54,8 +54,20 @@ export default function Work() {
               <p>Git</p>
             </div>
             <div className="link-icons">
-              <FaGithub />
-              <TbExternalLink />
+              <a
+                href="https://www.github.com"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <FaGithub />
+              </a>
+              <a
+                href="https://www.google.com"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <TbExternalLink />
+              </a>
             </div>
           </div>
         </div>
@@ -83,8 +95,20 @@ export default function Work() {
               <p>Git</p>
             </div>
             <div className="link-icons">
-              <FaGithub />
-              <TbExternalLink />
+              <a
+                href="https://www.github.com"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <FaGithub />
+              </a>
+              <a
+                href="https://www.google.com"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <TbExternalLink />
+              </a>
             </div>
           </div>
         </div>
@@ -113,8 +137,20 @@ export default function Work() {
               <p>Git</p>
             </div>
             <div className="link-icons">
-              <FaGithub />
-              <TbExternalLink />
+              <a
+                href="https://www.github.com"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <FaGithub />
+              </a>
+              <a
+                href="https://www.google.com"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <TbExternalLink />
+              </a>
             </div>
           </div>
         </div>

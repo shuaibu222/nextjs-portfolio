@@ -7,7 +7,6 @@ import { Poppins } from 'next/font/google';
 import Link from 'next/link';
 import About from './components/About';
 import Work from './components/Work';
-import Footer from './components/Footer';
 
 const poppins = Poppins({ subsets: ['latin'], weight: '500' });
 
@@ -21,6 +20,9 @@ export default function Home() {
             <span></span>
             <p className="engineer-child">Frontend software engineer</p>
           </div>
+          <a href="https://www.google.com" className="resume">
+            My resume
+          </a>
         </div>
         <div className="second-row">
           <Link href="#about" className="down">
@@ -53,9 +55,6 @@ export default function Home() {
 
       {/* work section */}
       <Work />
-
-      {/* footer */}
-      <Footer />
     </>
   );
 }
