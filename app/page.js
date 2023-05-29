@@ -1,5 +1,5 @@
-'use client';
-
+import getAbout from '@/lib/getAbout';
+import getProjects from '@/lib/getProjects';
 import { BsArrowDown } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 import { ImHome } from 'react-icons/im';
@@ -11,12 +11,17 @@ import Footer from './components/Footer';
 
 const poppins = Poppins({ subsets: ['latin'], weight: '500' });
 
-export default function Home() {
+export default async function Home() {
+  const about = await getAbout();
+  const projects = await getProjects();
+
+  const name = about.name;
+
   return (
     <>
       <section className="hero" id="hero">
         <div className="first-row">
-          <h1>Shuaib.</h1>
+          <h1>{name}</h1>
           <div className="engineer">
             <span></span>
             <p className="engineer-child">Frontend software engineer</p>

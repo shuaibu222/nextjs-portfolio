@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sanity/client": "^6.1.2",
+    "@sanity/image-url": "^1.0.2",
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.1",
     "next": "^13.4.4",
