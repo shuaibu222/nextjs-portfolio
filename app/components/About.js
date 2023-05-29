@@ -18,7 +18,7 @@ export default function About() {
           <span></span>
         </div>
       </section>
-      <h2 className={`bg-name ${poppins.className}`}>ABOUT.</h2>
+      <h2 className={`bg-name ${poppins.className}`}>ABOUT</h2>
       <section className="content">
         <div className="profile-img">
           <img src={image.src} alt="shuaib" />
@@ -95,6 +95,22 @@ export default function About() {
               <div className="div">
                 <MdPlayArrow className="arrow-right" />
                 <p>Testing</p>
+              </div>
+              <div className="div">
+                <MdPlayArrow className="arrow-right" />
+                <p>Git</p>
+              </div>
+              <div className="div">
+                <MdPlayArrow className="arrow-right" />
+                <p>Github</p>
+              </div>
+              <div className="div">
+                <MdPlayArrow className="arrow-right" />
+                <p>RWD</p>
+              </div>
+              <div className="div">
+                <MdPlayArrow className="arrow-right" />
+                <p>SEO</p>
               </div>
             </div>
           </section>

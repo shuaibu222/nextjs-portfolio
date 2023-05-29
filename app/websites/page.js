@@ -26,7 +26,7 @@ export default function Home() {
                 <FaHtml5 />
                 <h2>HTML & CSS</h2>
               </div>
-              <h3>Beautiful and Minimal UIs</h3>
+              <h3 className="name">Beautiful and Minimal UIs</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
                 voluptas, nisi dignissimos quasi unde necessitatibus tenetur

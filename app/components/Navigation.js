@@ -8,10 +8,21 @@ export default function Navigation() {
   const [activeTab, setActiveTab] = useState('home');
   return (
     <header id="header">
+      <Link href="/" className="logo">
+        S.
+      </Link>
       <nav>
-        <Link href="/" className="logo">
-          S.
-        </Link>
+        <ul>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#work">Work</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
       </nav>
       <div className="social-icons">
         <a
