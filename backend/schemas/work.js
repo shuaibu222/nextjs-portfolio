@@ -35,5 +35,11 @@ export default {
       type: 'array',
       of: [{type: 'url'}],
     },
+    {
+      name: 'icon',
+      title: 'Icon',
+      type: 'array',
+      of: [{type: 'text'}],
+    },
   ],
 }

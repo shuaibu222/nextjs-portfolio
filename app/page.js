@@ -4,6 +4,7 @@ import { BsArrowDown } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 import { ImHome } from 'react-icons/im';
 import { Poppins } from 'next/font/google';
+import { Suspense } from 'react';
 import Link from 'next/link';
 import About from './components/About';
 import Work from './components/Work';
@@ -12,10 +13,12 @@ import Footer from './components/Footer';
 const poppins = Poppins({ subsets: ['latin'], weight: '500' });
 
 export default async function Home() {
-  const about = await getAbout();
-  const projects = await getProjects();
+  const aboutData = getAbout();
+  const projectsData = getProjects();
 
-  const name = about.name;
+  const data = await aboutData;
+
+  const name = data.map((name) => name.myname);
 
   return (
     <>
@@ -60,10 +63,12 @@ export default async function Home() {
         </Link>
       </section>
       {/* about section */}
-      <About />
+      <About data={data} />
 
       {/* work section */}
-      <Work />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Work promise={projectsData} />
+      </Suspense>
 
       {/* footer section */}
       <Footer />

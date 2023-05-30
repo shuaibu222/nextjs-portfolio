@@ -10,7 +10,9 @@ import imageApp from '../../assets/Screenshot 2023-05-26 at 10-43-44 React App.p
 
 const poppins = Poppins({ subsets: ['latin'], weight: '900' });
 
-export default function Work() {
+export default async function Work({ promise }) {
+  const works = await promise;
+
   return (
     <article className="work" id="work">
       <section className="heading">
@@ -23,261 +25,89 @@ export default function Work() {
       </section>
       <h2 className={`bg-name ${poppins.className}`}>WORK</h2>
       <section className="content">
-        <div className="p-wrapper">
-          <div className="project">
-            <div className="p-img-p right">
-              <img src={imageDept.src} alt="app-img" className="p-img" />
-            </div>
-            <div className="project-desc right">
-              <div className="div">
-                <FaHtml5 />
-                <h2>HTML & CSS</h2>
-              </div>
-              <h3>
-                <Link href="/websites" className="name">
-                  Beautiful and Minimal UIs
-                </Link>
-                <BsArrowRight className="arr-project" />
-              </h3>
+        {works.map((work) => {
+          const { tooltip, title, _id, link, icon, description, tech, image } =
+            work;
+          return (
+            <div className="p-wrapper" key={_id}>
+              <div className="project">
+                <div className="p-img-p right">
+                  <img src={imageDept.src} alt="app-img" className="p-img" />
+                </div>
+                <div className="project-desc right">
+                  <div className="div">
+                    <FaHtml5 />
+                    <h2>{tooltip}</h2>
+                  </div>
+                  <h3>
+                    <Link href="/websites" className="name">
+                      {title}
+                    </Link>
+                    <BsArrowRight className="arr-project" />
+                  </h3>
 
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-                voluptas, nisi dignissimos quasi unde necessitatibus tenetur
-                libero. Quae recusandae nemo exercitationem dolorum vel. Vel,
-                molestias? Voluptate repellendus ab ex eum officiis neque non
-                ad, veritatis provident nesciunt saepe.
-              </p>
-              <div className="tech-list">
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>JavaScript</p>
-                <p>Sass</p>
-                <p>Git</p>
+                  <p>{description}</p>
+                  <div className="tech-list">
+                    {tech.map((t, index) => {
+                      return <p key={index}>{t}</p>;
+                    })}
+                  </div>
+                  <div className="link-icons">
+                    <a
+                      href="https://www.github.com"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <FaGithub />
+                    </a>
+                    <a
+                      href="https://www.google.com"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <TbExternalLink />
+                    </a>
+                  </div>
+                </div>
               </div>
-              <div className="link-icons">
-                <a
-                  href="https://www.github.com"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  <FaGithub />
-                </a>
-                <a
-                  href="https://www.google.com"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  <TbExternalLink />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="project-desc-child right">
-            <div className="div">
-              <FaHtml5 />
-              <h2>HTML & CSS</h2>
-            </div>
-            <h3>
-              <Link href="/websites" className="name">
-                Beautiful UIs
-              </Link>
-              <BsArrowRight className="arr-project" />
-            </h3>
+              <div className="project-desc-child right">
+                <div className="div">
+                  <FaHtml5 />
+                  <h2>HTML & CSS</h2>
+                </div>
+                <h3>
+                  <Link href="/websites" className="name">
+                    Beautiful UIs
+                  </Link>
+                  <BsArrowRight className="arr-project" />
+                </h3>
 
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-              voluptas, nisi dignissimos quasi unde necessitatibus tenetur
-              libero. Quae recusandae nemo exercitationem dolorum vel. Vel,
-              molestias? Voluptate repellendus ab ex eum officiis neque non ad,
-              veritatis provident nesciunt saepe.
-            </p>
-            <div className="tech-list">
-              <p>HTML</p>
-              <p>CSS</p>
-              <p>JavaScript</p>
-              <p>Sass</p>
-              <p>Git</p>
-            </div>
-            <div className="link-icons">
-              <a
-                href="https://www.github.com"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <FaGithub />
-              </a>
-              <a
-                href="https://www.google.com"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <TbExternalLink />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className="p-wrapper">
-          <div className="project">
-            <div className="p-img-p left">
-              <img src={imageApp.src} alt="app-img" className="p-img" />
-            </div>
-            <div className="project-desc left">
-              <div className="div">
-                <FaReact />
-                <h2>react js project</h2>
-              </div>
-              <h3 className="name">Product Review</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-                voluptas, nisi dignissimos quasi unde necessitatibus tenetur
-                libero. Quae recusandae nemo exercitationem dolorum vel. Vel,
-                molestias? Voluptate repellendus ab ex eum officiis neque non
-                ad, veritatis provident nesciunt saepe.
-              </p>
-              <div className="tech-list">
-                <p>react js</p>
-                <p>Sass</p>
-                <p>sanity</p>
-                <p>Git</p>
-              </div>
-              <div className="link-icons">
-                <a
-                  href="https://www.github.com"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  <FaGithub />
-                </a>
-                <a
-                  href="https://www.google.com"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  <TbExternalLink />
-                </a>
+                <p>{description}</p>
+                <div className="tech-list">
+                  {tech.map((t, index) => {
+                    return <p key={index}>{t}</p>;
+                  })}
+                </div>
+                <div className="link-icons">
+                  {link.map((l, index) => {
+                    return (
+                      <a
+                        key={index}
+                        href={`${link}`}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        {icon.map((i, index) => {
+                          return i;
+                        })}
+                      </a>
+                    );
+                  })}
+                </div>
               </div>
             </div>
-          </div>
-          <div className="project-desc-child left">
-            <div className="div">
-              <FaReact />
-              <h2>react js project</h2>
-            </div>
-            <h3 className="name">Product Review</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-              voluptas, nisi dignissimos quasi unde necessitatibus tenetur
-              libero. Quae recusandae nemo exercitationem dolorum vel. Vel,
-              molestias? Voluptate repellendus ab ex eum officiis neque non ad,
-              veritatis provident nesciunt saepe.
-            </p>
-            <div className="tech-list">
-              <p>react js</p>
-              <p>Sass</p>
-              <p>sanity</p>
-              <p>Git</p>
-            </div>
-            <div className="link-icons">
-              <a
-                href="https://www.github.com"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <FaGithub />
-              </a>
-              <a
-                href="https://www.google.com"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <TbExternalLink />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className="p-wrapper">
-          <div className="project">
-            <div className="p-img-p right">
-              <img src={imageDept.src} alt="app-img" className="p-img" />
-            </div>
-            <div className="project-desc right">
-              <div className="div">
-                <SiNextdotjs />
-                <h2>next js project</h2>
-              </div>
-              <h3 className="name">DHTN Dashboard</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-                voluptas, nisi dignissimos quasi unde necessitatibus tenetur
-                libero. Quae recusandae nemo exercitationem dolorum vel. Vel,
-                molestias? Voluptate repellendus ab ex eum officiis neque non
-                ad, veritatis provident nesciunt saepe.
-              </p>
-              <div className="tech-list">
-                <p>next js</p>
-                <p>CSS</p>
-                <p>firebase</p>
-                <p>sanity</p>
-                <p>Git</p>
-              </div>
-              <div className="link-icons">
-                <a
-                  href="https://www.github.com"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  <FaGithub />
-                </a>
-                <a
-                  href="https://www.google.com"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  <TbExternalLink />
-                </a>
-              </div>
-            </div>
-          </div>{' '}
-          <div className="project-desc-child right">
-            <div className="div">
-              <SiNextdotjs />
-              <h2>next js project</h2>
-            </div>
-            <h3 className="name">DHTN Dashboard</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-              voluptas, nisi dignissimos quasi unde necessitatibus tenetur
-              libero. Quae recusandae nemo exercitationem dolorum vel. Vel,
-              molestias? Voluptate repellendus ab ex eum officiis neque non ad,
-              veritatis provident nesciunt saepe.
-            </p>
-            <div className="tech-list">
-              <p>next js</p>
-              <p>CSS</p>
-              <p>firebase</p>
-              <p>sanity</p>
-              <p>Git</p>
-            </div>
-            <div className="link-icons">
-              <a
-                href="https://www.github.com"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <FaGithub />
-              </a>
-              <a
-                href="https://www.google.com"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <TbExternalLink />
-              </a>
-            </div>
-          </div>
-        </div>
+          );
+        })}
       </section>
     </article>
   );
