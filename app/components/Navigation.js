@@ -40,7 +40,7 @@ export default function Navigation() {
           <FaTwitter />
         </a>
         <a
-          href="https://www.google.com"
+          href="https://www.linkedin.com"
           target="_blank"
           rel="norefferer noopener"
         >
