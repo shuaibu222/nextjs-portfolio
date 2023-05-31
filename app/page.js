@@ -42,9 +42,9 @@ export default async function Home() {
           <div className="email">
             <MdEmail className="email-icon" />
             <span></span>
-            <Link href="/" className="shuaibu-email">
+            <a href="#contact" className="shuaibu-email">
               shuaibuabdulkadir222@gmail.com
-            </Link>
+            </a>
           </div>
           <div className="nav">
             <Link className="nav-items" href="#about">

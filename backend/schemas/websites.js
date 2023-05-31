@@ -1,6 +1,6 @@
 export default {
-  name: 'projects',
-  title: 'Projects',
+  name: 'websites',
+  title: 'Websites',
   type: 'document',
   fields: [
     {
@@ -19,11 +19,6 @@ export default {
     {
       name: 'tooltip',
       title: 'Tooltip',
-      type: 'string',
-    },
-    {
-      name: 'link',
-      title: 'Link',
       type: 'string',
     },
     {

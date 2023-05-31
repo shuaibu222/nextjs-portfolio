@@ -543,8 +543,8 @@ nav ul li:hover {
 
 .project-desc h2,
 .project-desc-child h2 {
-  color: var(--dark-text);
-  font-size: 0.8rem;
+  color: var(--light-text);
+  font-size: 0.85rem;
   text-transform: uppercase;
 }
 
@@ -674,7 +674,7 @@ nav ul li:hover {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  max-width: 70vw;
+  max-width: 90vw;
   margin-inline: auto;
   margin-top: 4rem;
   margin-bottom: 4rem;
@@ -689,6 +689,12 @@ nav ul li:hover {
   display: flex;
   flex-direction: column;
   gap: 4rem;
+}
+
+@media (min-width: 50em) {
+  .web-site {
+    max-width: 70vw;
+  }
 }
 
 /* footer */
