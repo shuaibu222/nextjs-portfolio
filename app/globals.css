@@ -325,6 +325,9 @@ nav ul li:hover {
 }
 
 @media (min-width: 30em) {
+  .hero {
+    min-height: 85vh;
+  }
   .engineer > span {
     width: 3rem;
     height: 2px;
