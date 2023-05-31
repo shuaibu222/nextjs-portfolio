@@ -103,6 +103,7 @@ nav ul {
 }
 
 nav ul li {
+  font-size: 0.9rem;
   transition: all 0.3s ease-in-out;
 }
 
@@ -132,6 +133,9 @@ nav ul li:hover {
 @media (min-width: 50em) {
   nav {
     display: none;
+  }
+  nav ul li {
+    font-size: 1rem;
   }
   .social-icons {
     display: flex;
@@ -254,7 +258,7 @@ nav ul li:hover {
   justify-content: space-between;
   max-width: 70vw;
   margin-inline: auto;
-  min-height: 85vh;
+  min-height: 80vh;
   margin-bottom: 5rem;
 }
 
@@ -265,7 +269,7 @@ nav ul li:hover {
 
 .hero h1 {
   color: var(--accent);
-  font-size: clamp(3rem, 10vw, 9rem);
+  font-size: clamp(4rem, 10vw, 9rem);
   margin-bottom: 1rem;
 }
 
