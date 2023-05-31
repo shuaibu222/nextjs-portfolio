@@ -49,7 +49,7 @@ export default async function Work({ promise }) {
                 <div className="project-desc right">
                   <h2>{tooltip}</h2>
                   <h3>
-                    <Link href={`${link}`} className="name">
+                    <Link href={link} className="name">
                       {title}
                     </Link>
                     <BsArrowRight className="arr-project" />
@@ -82,7 +82,7 @@ export default async function Work({ promise }) {
               <div className="project-desc-child right">
                 <h2>{tooltip}</h2>
                 <h3>
-                  <Link href={`${link}`} className="name">
+                  <Link href={link} className="name">
                     {title}
                   </Link>
                   <BsArrowRight className="arr-project" />
