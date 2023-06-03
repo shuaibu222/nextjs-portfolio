@@ -256,7 +256,7 @@ nav ul li:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 70vw;
+  max-width: 80vw;
   margin-inline: auto;
   min-height: 80vh;
   margin-bottom: 5rem;
@@ -347,13 +347,12 @@ nav ul li:hover {
   margin-inline: auto;
   margin-top: 5rem;
   margin-bottom: 5rem;
-  padding: 3rem 2rem;
+  padding: 3rem 1rem;
   background: rgba(0, 225, 255, 0.055);
   border-top: 7px solid var(--accent);
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
   border-bottom: 7px solid var(--accent);
-  /* border-radius: 1.5rem; */
   z-index: 100;
 }
 
@@ -558,7 +557,7 @@ nav ul li:hover {
 .project-desc .name,
 .project-desc-child .name {
   color: var(--accent);
-  font-size: clamp(1rem, 2vw, 1.6rem);
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
 }
 
 .project-desc:nth-child(2),
