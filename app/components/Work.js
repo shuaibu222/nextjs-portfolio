@@ -69,13 +69,13 @@ export default async function Work({ promise }) {
                     >
                       <FaGithub />
                     </a>
-                    <a
+                    <Link
                       href={`${site}`}
                       target="_blank"
                       rel="noreferrer noopener"
                     >
                       <TbExternalLink />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -102,9 +102,13 @@ export default async function Work({ promise }) {
                   >
                     <FaGithub />
                   </a>
-                  <a href={`${site}`} target="_blank" rel="noreferrer noopener">
+                  <Link
+                    href={`${site}`}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
                     <TbExternalLink />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

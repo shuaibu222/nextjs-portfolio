@@ -45,7 +45,7 @@ export default {
     {
       name: 'site',
       title: 'Site',
-      type: 'url',
+      type: 'string',
     },
   ],
 }
