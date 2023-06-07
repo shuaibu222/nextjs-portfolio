@@ -723,7 +723,6 @@ nav ul li:hover {
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
   border-bottom: 7px solid var(--accent);
-  z-index: 1000;
 }
 .email-wrapper {
   position: relative;
@@ -731,18 +730,8 @@ nav ul li:hover {
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  z-index: 1000;
+  z-index: 10000;
 }
-
-/* .on-email {
-  position: absolute;
-  top: 4.7rem;
-  left: 4.7rem;
-  font-size: 1rem;
-  color: black;
-  transform: rotate(-30deg);
-  z-index: 1;
-} */
 
 .f-icons {
   display: flex;
