@@ -213,6 +213,10 @@ nav ul li:hover {
   background-position: 0 100%;
 }
 
+.active-navitems {
+  color: var(--accent);
+}
+
 @media (min-width: 50em) {
   .sticky {
     position: fixed;

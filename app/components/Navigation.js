@@ -5,7 +5,6 @@ import { React, useState } from 'react';
 import Link from 'next/link';
 
 export default function Navigation() {
-  const [activeTab, setActiveTab] = useState('home');
   return (
     <header id="header">
       <Link href="/" className="logo">
@@ -26,21 +25,21 @@ export default function Navigation() {
       </nav>
       <div className="social-icons">
         <a
-          href="https://www.github.com"
+          href="https://www.github.com/shuaibu222"
           target="_blank"
           rel="norefferer noopener"
         >
           <FaGithub />
         </a>
         <a
-          href="https://www.twitter.com"
+          href="https://twitter.com/Shuaibu38311649"
           target="_blank"
           rel="norefferer noopener"
         >
           <FaTwitter />
         </a>
         <a
-          href="https://www.linkedin.com"
+          href="https://www.linkedin.com/in/shuaibu-abdulkadir-b60176253/"
           target="_blank"
           rel="norefferer noopener"
         >
