@@ -29,9 +29,9 @@ export default async function Home() {
             <span></span>
             <p className="engineer-child">Frontend software engineer</p>
           </div>
-          <a href="https://www.google.com" className="resume">
+          <Link href="/resume.pdf" className="resume" download>
             My resume
-          </a>
+          </Link>
         </div>
         <div className="second-row">
           <Link href="#about" className="down">
