@@ -20,7 +20,7 @@ export default function Footer() {
       <h2 className={`bg-name ${poppins.className}`}>CONTACT</h2>
       <section className="email-wrapper">
         {/* <p className={`on-email ${poppin.className}`}>email me</p> */}
-        <a href="https://www.nextjs.org" className="email">
+        <a href="mailto:shuaibuabdulkadir222@gmail.com" className="email">
           <SiMinutemailer className="footer-img" />
         </a>
         <div className="f-icons">
