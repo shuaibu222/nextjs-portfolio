@@ -391,7 +391,7 @@ nav ul li:hover {
 .bg-name {
   position: absolute;
   top: -3.5rem;
-  font-size: clamp(9rem, 30vw, 23rem);
+  font-size: clamp(9rem, 30vw, 20rem);
   color: rgba(225, 225, 225, 0.051);
 }
 

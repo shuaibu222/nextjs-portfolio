@@ -29,8 +29,7 @@ export default async function About(data) {
                 <Image
                   src={image}
                   placeholder="blur"
-                  width={420}
-                  height={420}
+                  style={{ width: '100%', height: 'auto' }}
                   alt="shuaib"
                 />
               </div>

@@ -5,6 +5,7 @@ import { TbExternalLink } from 'react-icons/tb';
 import { FaGithub } from 'react-icons/fa';
 import { BsArrowRight } from 'react-icons/bs';
 import urlFor from '@/sanity';
+import Image from 'next/image';
 
 const poppins = Poppins({ subsets: ['latin'], weight: '900' });
 
@@ -39,10 +40,14 @@ export default async function Work({ promise }) {
             <div className="p-wrapper" key={_id}>
               <div className="project">
                 <div className="p-img-p right">
-                  <img
+                  <Image
                     src={urlFor(image).url()}
                     alt="app-img"
                     className="p-img"
+                    width={550}
+                    height={420}
+                    quality={100}
+                    unoptimized={true}
                   />
                 </div>
                 <div className="project-desc right">
