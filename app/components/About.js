@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { Poppins } from 'next/font/google';
 import { MdPlayArrow } from 'react-icons/md';
 import image from '../../assets/shuaib.jpg';
@@ -25,7 +26,13 @@ export default async function About(data) {
             <h2 className={`bg-name ${poppins.className}`}>ABOUT</h2>
             <section className="content">
               <div className="profile-img">
-                <img src={image.src} alt="shuaib" />
+                <Image
+                  src={image}
+                  placeholder="blur"
+                  width={420}
+                  height={420}
+                  alt="shuaib"
+                />
               </div>
               <div className="tooltip">
                 <h3>Shuaib.</h3>

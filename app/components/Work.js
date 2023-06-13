@@ -2,9 +2,8 @@ import React from 'react';
 import { Poppins } from 'next/font/google';
 import Link from 'next/link';
 import { TbExternalLink } from 'react-icons/tb';
-import { FaGithub, FaReact, FaHtml5 } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 import { BsArrowRight } from 'react-icons/bs';
-import { SiNextdotjs } from 'react-icons/si';
 import urlFor from '@/sanity';
 
 const poppins = Poppins({ subsets: ['latin'], weight: '900' });
