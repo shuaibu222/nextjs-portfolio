@@ -16,7 +16,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={poppins.className}>
-        {/* suppressHydrationWarning={true} */}
         <Navigation />
         {children}
       </body>
