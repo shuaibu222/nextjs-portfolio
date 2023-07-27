@@ -49,6 +49,7 @@ body {
   background: var(--background);
   line-height: 1;
   position: relative;
+  color: white;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -68,6 +69,7 @@ h3,
 h4,
 h5,
 h6 {
+  color: white;
   letter-spacing: 1px;
 }
 
@@ -122,6 +124,7 @@ nav ul li:hover {
 }
 
 .social-icons > a {
+  color: white;
   transition: all 0.3s ease-in-out;
 }
 
@@ -754,6 +757,7 @@ nav ul li:hover {
 }
 
 .contact .footer-img {
+  color: white;
   font-size: 12rem;
   transition: all 0.3s ease-in-out;
 }
@@ -765,13 +769,6 @@ nav ul li:hover {
 .contact a {
   text-decoration: underline;
 }
-
-/* .footer-child {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-} */
 
 .footer-desc p {
   font-size: 0.8rem;
