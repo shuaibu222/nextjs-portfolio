@@ -8,61 +8,61 @@ const poppin = Poppins({ subsets: ['latin'], weight: '400' });
 
 export default function Footer() {
   return (
-    <article className="contact" id="contact">
-      <section className="heading">
+    <article className='contact' id='contact'>
+      <section className='heading'>
         <h1>Contact.</h1>
-        <div className="desc">
+        <div className='desc'>
           <span></span>
           <p>where to reach me?</p>
           <span></span>
         </div>
       </section>
       <h2 className={`bg-name ${poppins.className}`}>CONTACT</h2>
-      <section className="email-wrapper">
+      <section className='email-wrapper'>
         {/* <p className={`on-email ${poppin.className}`}>email me</p> */}
-        <a href="mailto:shuaibuabdulkadir222@gmail.com" className="email">
-          <SiMinutemailer className="footer-img" />
+        <a href='mailto:shuaibuabdulkadir222@gmail.com' className='email'>
+          <SiMinutemailer className='footer-img' />
         </a>
-        <div className="f-icons">
+        <div className='f-icons'>
           <a
-            href="https://www.github.com"
-            target="_blank"
-            rel="norefferer noopener"
+            href='https://www.github.com/shuaibu222'
+            target='_blank'
+            rel='norefferer noopener'
           >
             <FaGithub />
           </a>
           <a
-            href="https://www.twitter.com"
-            target="_blank"
-            rel="norefferer noopener"
+            href='https://twitter.com/Shuaibu38311649'
+            target='_blank'
+            rel='norefferer noopener'
           >
             <FaTwitter />
           </a>
           <a
-            href="https://www.google.com"
-            target="_blank"
-            rel="norefferer noopener"
+            href='https://www.linkedin.com/in/shuaibu-abdulkadir-b60176253/'
+            target='_blank'
+            rel='norefferer noopener'
           >
             <FaLinkedinIn />
           </a>
         </div>
       </section>
 
-      <div className="footer-desc">
+      <div className='footer-desc'>
         <p>
           Built with{' '}
           <a
-            href="https://www.nextjs.org"
-            target="_blank"
-            rel="noreferrer noopener"
+            href='https://www.nextjs.org'
+            target='_blank'
+            rel='noreferrer noopener'
           >
             Nextjs
           </a>{' '}
           and{' '}
           <a
-            href="https://www.sanity.io"
-            target="_blank"
-            rel="noreferrer noopener"
+            href='https://www.sanity.io'
+            target='_blank'
+            rel='noreferrer noopener'
           >
             Sanity
           </a>
