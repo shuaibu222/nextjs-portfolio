@@ -27,7 +27,7 @@ export default async function Home() {
           <h1>{name}</h1>
           <div className='engineer'>
             <span></span>
-            <p className='engineer-child'>Frontend engineer</p>
+            <p className='engineer-child'>Frontend software engineer</p>
           </div>
           <Link href='/resume.pdf' className='resume' download>
             My resume
