@@ -22,43 +22,43 @@ export default async function Home() {
 
   return (
     <>
-      <section className="hero" id="hero">
-        <div className="first-row">
+      <section className='hero' id='hero'>
+        <div className='first-row'>
           <h1>{name}</h1>
-          <div className="engineer">
+          <div className='engineer'>
             <span></span>
-            <p className="engineer-child">Frontend software engineer</p>
+            <p className='engineer-child'>Frontend engineer</p>
           </div>
-          <Link href="/resume.pdf" className="resume" download>
+          <Link href='/resume.pdf' className='resume' download>
             My resume
           </Link>
         </div>
-        <div className="second-row">
-          <Link href="#about" className="down">
-            <BsArrowDown className="arrow-down" />
+        <div className='second-row'>
+          <Link href='#about' className='down'>
+            <BsArrowDown className='arrow-down' />
           </Link>
         </div>
-        <div className="sticky">
-          <div className="email">
-            <MdEmail className="email-icon" />
+        <div className='sticky'>
+          <div className='email'>
+            <MdEmail className='email-icon' />
             <span></span>
-            <a href="#contact" className="shuaibu-email">
+            <a href='#contact' className='shuaibu-email'>
               shuaibuabdulkadir222@gmail.com
             </a>
           </div>
-          <div className="nav">
-            <Link className="nav-items" href="#about">
+          <div className='nav'>
+            <Link className='nav-items' href='#about'>
               About.
             </Link>
-            <Link className="nav-items" href="#work">
+            <Link className='nav-items' href='#work'>
               Work.
             </Link>
-            <Link href="#contact" className="nav-items">
+            <Link href='#contact' className='nav-items'>
               Contact.
             </Link>
           </div>
         </div>
-        <Link href="#header" className="home-p">
+        <Link href='#header' className='home-p'>
           <ImHome />
         </Link>
       </section>
