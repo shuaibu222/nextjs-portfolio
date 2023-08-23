@@ -660,7 +660,6 @@ nav ul li:hover {
   }
 
   .p-img {
-    border: 2px solid var(--accent);
     border-radius: 1rem;
   }
 

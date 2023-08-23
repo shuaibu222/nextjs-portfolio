@@ -42,7 +42,7 @@ export default async function Home() {
                   </div>
                   <div className="project-desc right">
                     <h2>{tooltip}</h2>
-                    <h3>{title}</h3>
+                    <h3 className='name'>{title}</h3>
                     <p>{description}</p>
                     <div className="tech-list">
                       {tech.map((t, index) => {
