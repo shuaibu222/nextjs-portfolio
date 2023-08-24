@@ -356,11 +356,11 @@ nav ul li:hover {
   margin-top: 5rem;
   margin-bottom: 5rem;
   padding: 3rem 1rem;
-  background: rgba(0, 225, 255, 0.055);
-  border-top: 7px solid var(--accent);
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-  border-bottom: 7px solid var(--accent);
+  background: rgba(0, 225, 255, 0.050);
+  border-top: 2px solid var(--accent);
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-bottom: 2px solid var(--accent);
   z-index: 100;
 }
 
@@ -510,18 +510,18 @@ nav ul li:hover {
   margin-top: 5rem;
   margin-bottom: 5rem;
   padding: 2rem 1rem;
-  background: rgba(0, 225, 255, 0.055);
-  border-top: 7px solid var(--accent);
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-  border-bottom: 7px solid var(--accent);
+  background: rgba(0, 225, 255, 0.050);
+  border-top: 2px solid var(--accent);
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-bottom: 2px solid var(--accent);
   z-index: 1000;
 }
 
 .work .content {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 5rem;
   margin-top: 7rem;
 }
 
@@ -724,11 +724,11 @@ nav ul li:hover {
   margin-inline: auto;
   margin-top: 5rem;
   padding: 1.5rem;
-  background: rgba(0, 225, 255, 0.055);
-  border-top: 7px solid var(--accent);
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-  border-bottom: 7px solid var(--accent);
+  background: rgba(0, 225, 255, 0.050);
+  border-top: 2px solid var(--accent);
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-bottom: 2px solid var(--accent);
 }
 .email-wrapper {
   position: relative;
