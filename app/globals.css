@@ -639,6 +639,7 @@ nav ul li:hover {
     position: relative;
     grid-column: 1 / 10;
     grid-row: 1 / 1;
+
   }
 
   .project-desc {
@@ -661,6 +662,7 @@ nav ul li:hover {
 
   .p-img {
     border-radius: 1rem;
+    border: 2px solid cyan;
   }
 
   .p-img-p::after {
