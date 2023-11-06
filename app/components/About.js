@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { Poppins } from 'next/font/google';
 import { MdPlayArrow } from 'react-icons/md';
-import image from '../../assets/shuaib.jpg';
+import image from '../../assets/shuaibu.jpeg';
 
 const poppins = Poppins({ subsets: ['latin'], weight: '900' });
 
@@ -19,7 +19,7 @@ export default async function About(data) {
               <h1>About.</h1>
               <div className="desc">
                 <span></span>
-                <p>what&apos;s my personality?</p>
+                <p>my personality</p>
                 <span></span>
               </div>
             </section>
@@ -46,7 +46,7 @@ export default async function About(data) {
                 })}
                 <section className="skills" id="skills">
                   <p>
-                    Here are my core skills that I&apos;ve been working with:
+                    Here are the technologies that I&apos;ve been working with:
                   </p>
                   <div className="list">
                     {skills.map((skill, index) => {
