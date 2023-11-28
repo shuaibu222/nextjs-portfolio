@@ -19,7 +19,7 @@ export default async function About(data) {
               <h1>About.</h1>
               <div className="desc">
                 <span></span>
-                <p>my personality</p>
+                <p>personality</p>
                 <span></span>
               </div>
             </section>

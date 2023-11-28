@@ -13,7 +13,7 @@ export default function Footer() {
         <h1>Contact.</h1>
         <div className='desc'>
           <span></span>
-          <p>where to reach me?</p>
+          <p>reach me at!</p>
           <span></span>
         </div>
       </section>
