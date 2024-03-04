@@ -30,7 +30,7 @@ export default async function Home() {
             <p className='engineer-child'>Software Engineer</p>
           </div>
           <Link href='/resume.pdf' className='resume' download>
-            Resume
+            My Resume
           </Link>
         </div>
         <div className='second-row'>
