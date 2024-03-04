@@ -18,7 +18,7 @@ export default async function Work({ promise }) {
         <h1>Work.</h1>
         <div className="desc">
           <span></span>
-          <p>featured innovations</p>
+          <p>featured projects</p>
           <span></span>
         </div>
       </section>

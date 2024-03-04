@@ -13,7 +13,7 @@ export default function Footer() {
         <h1>Contact.</h1>
         <div className='desc'>
           <span></span>
-          <p>reach me at!</p>
+          <p>more info</p>
           <span></span>
         </div>
       </section>
@@ -38,7 +38,7 @@ export default function Footer() {
             <FaTwitter />
           </a>
           <a
-            href='https://www.linkedin.com/in/shuaibu-abdulkadir-b60176253/'
+            href='https://www.linkedin.com/in/shuaibu-abdulkadir/'
             target='_blank'
             rel='norefferer noopener'
           >
